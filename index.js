@@ -1,6 +1,8 @@
 const express = require('express');
-const PORT = 8001;
 const app = express();
+
+const PORT = 8088;
+
 const urlRoute = require('./routes/url');
 const { connectToMongoDb } = require('./connection');
 const { handleRedirectUrl } = require('./controllers/url')
